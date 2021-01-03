@@ -9,8 +9,8 @@ main {
 	// Create a model for optimisation
 	opl.generate();
 
-	var weightStep = 0.01;
-	 
+	var weightStep = 0.1;
+		 
 	var strengthWeight = opl.weights[1];
 	
 	while (strengthWeight >= 0) {
