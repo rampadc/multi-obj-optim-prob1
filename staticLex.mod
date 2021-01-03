@@ -26,9 +26,7 @@ subject to {
 
 // When a .mod file contains a main block, the IDE (or the oplrun command) 
 // starts the execution of the model by running the main block first
-main {
-  var objectiveValues;
-  
+main {  
   // the `thisOplModel` corresponds to the model included in this file
   // .generate() generate the optimisation model and feed it to the CPLEX algorithm
   thisOplModel.generate();
