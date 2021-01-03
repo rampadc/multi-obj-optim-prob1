@@ -19,7 +19,7 @@ minimize staticLex(totalNegativeAttackStrength, totalBuildTime);
 
 // Constraints
 subject to {
-  ctFoodNoChurch: 20000 <= totalFood <= 20596;
+  ctFoodNoChurch: 20594 <= totalFood <= 20596;
   ctMustHaveRams: numberOfUnits["ram"] >= 250;
   0 < totalBuildTime <= 4 * 7 * 24 * 3600; // recruit time is in seconds, 4 weeks, 7 days/week, 24 hours/day, 3600 seconds/hour
 }

@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="ASCII"?><project>
 	<version>1.0</version>
 	<configs>
-		<config default="true" name="Configuration1" category="opl">
-			<ref name="multiobj-optim-1.dat" type="data">
+		<config default="false" name="cp" category="opl">
+			<ref name="staticLex.mod" type="model">
 			</ref>
-			<ref name="multiobj-optim-prob1-no-church.mod" type="model">
+		</config>
+		<config default="true" name="cplex" category="opl">
+			<ref name="staticLexFull.mod" type="model">
+			</ref>
+			<ref name="staticLexFull_data.dat" type="data">
+			</ref>
+		</config>
+		<config default="false" name="cplex-external-main" category="opl">
+			<ref name="staticLexFull_main.mod" type="model">
 			</ref>
 		</config>
 	</configs>
